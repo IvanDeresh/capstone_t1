@@ -6,13 +6,13 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve('dist'),
   },
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join('dist'),
     },
     hot: true,
     port: 3000,
